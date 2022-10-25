@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Isabel Zhou Personal WebsiteW3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+<style>
+    ul {
+        line-height: 30px;
+    }
+
+    .list {
+        line-height: 25px;
+    }
+
+    .list > .card, .tech-list > .card {
+        border: 1px solid #eeeeee;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        border-radius: 5px;
+    }
+    
+    .tech-list > .card {
+        border: 1px solid #eeeeee;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        border-radius: 5px;
+        padding: 5px 10px;
+    }
+
+    .tech-list > * {
+        margin: 10px;
+    }
+
+    .list > .card {
+        padding: 10px 15px;
+    }
+    
+
+    .icon-list {
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+    .icon-list > *, .list > * {
+        margin: 15px;
+    }
+
+    .icon-list > .card {
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+        border-radius: 5px;
+        padding: 10px 15px;
+        /* padding-left: 10px; */
+    }
+    .card > .icon > i {
+        /* width: 30px;
+        height: 30px; */
+        font-size: 1.5em;
+        /* margin: 3px 15px 3px 5px; */
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+    .card > .icon {
+        width: 35px;
+        /* padding-left: 5px; */
+        display: inline-block;
+        /* align-items: center; */
+        margin-right: 10px;
+    }
+    .card > .disc {
+
+    }
+    a, a:link, a:visited, a:hover, a:active {
+        text-decoration: none;
+    }
+</style>
+</head>
+<body class="w3-theme-l5">
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:30px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Isabel Zhou</h4>
+         <p class="w3-center"><img src="images/Avatar2.jpg" class="w3-circle" style="height:100%;width:100%" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Communications Rep/Webmaster</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Houston, TX </p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> June 24, 2000</p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-envelope fa-fw w3-margin-right"></i>iz2100@nyu.edu</button>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i><a href="https://www.instagram.com/imxizzy/">@imxizzy</a></button>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Foodie</span>
+            <span class="w3-tag w3-small w3-theme-d4">Friends</span>
+            <span class="w3-tag w3-small w3-theme-d3">Travel</span>
+            <span class="w3-tag w3-small w3-theme-d2">Reading</span>
+            <span class="w3-tag w3-small w3-theme-d1">Games</span>
+            <span class="w3-tag w3-small w3-theme">Art</span>
+            <span class="w3-tag w3-small w3-theme-l1">Weightlifting</span>
+            <span class="w3-tag w3-small w3-theme-l1">Photography</span>
+          </p>
+        </div>
+      </div>
+      <br>
+
+    <!-- Leadership --> 
+    <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+            <p>Leadership</p>
+            <p>
+              <span><b>Co-President</b> of Junior Achievement</span><br>
+              <span><b>Founding Member/Treasurer</b> of CSA</span><br>
+              <span><b>Secretary</b> of American Red Cross</span><br>
+            </p> 
+        </div>
+        </div>
+        <br>
+      
+      <!-- Alert Box
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div> -->
+    
+    <!-- End Left Column -->
+        <div class="w3-card w3-round w3-white">
+            <div class="w3-container">
+                <p>Technical Skills</p>
+                <div class="tech-list">
+                    <div class="card"><span class="disc">Websites (like this!)</span></div>
+                    <div class="card"><span class="disc">Engineering Academy</span></div>
+                    <div class="card"><span class="disc">Discord</span></div>
+                    <div class="card"><span class="disc">Personal IT support for family and friends</span></div>
+                </div>
+            </div>
+            <br>
+        </div>  
+    </div>
+
+    
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12" >
+          <div class="w3-card w3-theme-l1">
+            <div class="w3-container w3-padding" >
+              <h4><b>Why Am I Running?</b></h4>
+              <hr class="w3-clear">
+              <p> With my technical skills and experiences, I am the best candidate for communications represenative and webmaster. </p>
+              <div class="list">
+                <div class="card"><span class="disc">Exploit the newest technological advances</span></div>
+                <div class="card"><span class="disc">Provide easier organization and nagivation for our class <small><i>(picture below)</i></span></small></div>
+                <div class="card"><span class="disc">Ensure our success throughout dental school</span></div>
+            </div>
+              <!-- <ul>
+                <li>Exploit the newest technological advances  </li>
+                <li>Provide easier organization and nagivation for our class</li>
+                <li>Ensure our success throughout dental school</li>
+              </ul>   -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <h4 class="w3-opacity"><b>Get To Know Me</b></h4>
+        <hr class="w3-clear">
+        <!-- <ul>
+            <li>Got the nickname Izzy because there was another Isabel in my elementary school</li>
+            <li>Was an unplanned backup dancer for the Youtuber Kevjumba <small><i>(picture below)</i></small></li>
+            <li>Went to the same high school and university as Travis Scott</li>
+            <li>Did competitive dragon boat racing in high school <small><i>(picture below)</i></small></li>
+          </ul>   -->
+            <!-- <p> -->
+            <div class="icon-list">
+                <div class="card"><span class="icon"><i class="fa fa-child fa-lg"></i></span><span class="disc">Got the nickname Izzy because there was another Isabel in my elementary school</span></div>
+                <div class="card"><span class="icon"><i class="fa fa-music fa-lg"></i></span><span class="disc">Started playing piano when I was three, but stopped because of my small hands</span></div>
+                <div class="card"><span class="icon"><i class="fa fa-street-view fa-lg"></i></span><span class="disc">Was an unplanned backup dancer for the Youtuber Kevjumba <small><i>(picture below)</i></span></small></div>
+                <div class="card"><span class="icon"><i class="fa fa-graduation-cap fa-lg"></i></span><span class="disc">Went to the same high school and university as Travis Scott</span></div>
+                <div class="card"><span class="icon"><i class="fa fa-anchor fa-lg"></i></span><span class="disc">Did competitive dragon boat racing in high school <small><i>(picture below)</i></small></span></div>
+            </div>
+
+            <!-- <div class="icon-list">
+                <div class="card"><i class="fa fa-child fa-xl"></i><span>Got the nickname Izzy because there was another Isabel in my elementary school</span></div>
+                <div class="card"><i class="fa fa-music fa-xl"></i><span>Started playing piano when I was three, but stopped because of my small hands</span></div>
+                <div class="card"><i class="fa fa-street-view fa-xl"></i><span>Was an unplanned backup dancer for the Youtuber Kevjumba <small><i>(picture below)</i></span></small></div>
+                <div class="card"><i class="fa fa-graduation-cap fa-xl"></i><span>Went to the same high school and university as Travis Scott</span></div>
+                <div class="card"><i class="fa fa-anchor fa-xl"></i><span>Did competitive dragon boat racing in high school <small><i>(picture below)</i></small></span></div>
+            </div> -->
+            <!-- </p> -->
+            
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="images/kevjumba2.jpg" style="width:100%" alt="Picture with Kevjumba" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="images/dragon.jpg" style="width:100%" alt="Dragon Boat Picture" class="w3-margin-bottom">
+          </div>
+        </div>
+      </div>
+      
+      
+<!-- 
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="/w3images/avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="/w3images/nature.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  -->
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <!-- <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;"> -->
+          <p><strong>Nominate Izzy</strong></p>
+          <p>Friday October 28th, 11:59pm</p>
+          <p><a href="https://nyu.qualtrics.com/jfe/form/SV_a8E746PJoAnOhW6"><button class="w3-button w3-block w3-theme-l4">Nominate now!</button></a></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Quirk</p>
+          <p>
+            Made this website in one long night through Visual Studio Code and Github
+          </p> 
+        </div>
+      </div>
+      <br>
+      
+      <!-- <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div> -->
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Last updated: 10/25/2022</h5>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
